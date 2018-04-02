@@ -7,6 +7,7 @@ class App < Sinatra::Base
  post '/team' do
    @team = []
    params.each do |p|
+     @team << p
    end
    erb :team
  end
