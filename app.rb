@@ -5,7 +5,10 @@ class App < Sinatra::Base
    erb :newteam
  end
  post '/team' do
-   
+   @team = []
+   params.each do |p|
+   end
+   erb :team
  end
 
 end
